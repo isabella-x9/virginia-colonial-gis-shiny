@@ -1,0 +1,79 @@
+---
+title: "cleaned_entities_v2"
+output: word_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r }
+library(dplyr)
+library(readr)
+library(stringr)
+
+# load data
+entities <- read_csv("entities.csv")
+```
+
+
+# Remove obvious non-entities with a broader pattern
+```{r }
+junk_patterns <- c(
+  "Vol", "St\\.", "pp", "III", "II", "No\\.", "MS", "TT", "esq", "Index",
+  "Record", "Certification", "Volume", "fig", "Pan", "4 7", "Zao",
+  "Copy", "Resolution", "Memorandum", "Art", "Note", "list", "Table", "Page"
+)
+
+entities <- entities %>%
+  filter(
+    !str_detect(`ENTITY NAME`, regex(paste(junk_patterns, collapse="|"), ignore_case=TRUE)),
+    nchar(`ENTITY NAME`) > 2
+  )
+```
+
+
+# Fix known systematic mislabels
+```{r }
+entities <- entities %>%
+  mutate(
+    LABEL = case_when(
+      str_detect(`ENTITY NAME`, regex("tobacco", ignore_case=TRUE)) ~ "PRODUCT",
+      str_detect(`ENTITY NAME`, "\\d+\\s?shilling") ~ "MONEY",
+      str_detect(`ENTITY NAME`, regex("Jamestown|James Cittie|Henrico|Elizabeth Cittie|Charles City|Kecoughtan|Powhatan|York|Chesapeake", ignore_case=TRUE)) ~ "GPE",
+      LABEL == "PERSON" & str_detect(`ENTITY NAME`, "\\d") ~ "MISC",
+      TRUE ~ LABEL
+    )
+  )
+```
+
+
+# Flag suspicious entries 
+```{r }
+entities <- entities %>%
+  mutate(
+    suspicious = case_when(
+      str_detect(`ENTITY NAME`, "\\d") & !LABEL %in% c("CARDINAL", "MONEY", "DATE") ~ TRUE,
+      LABEL %in% c("GPE","LOC","ORG") & str_detect(`ENTITY NAME`, "\\d") ~ TRUE,
+      nchar(`ENTITY NAME`) <= 3 & !LABEL %in% c("CARDINAL", "DATE") ~ TRUE,
+      TRUE ~ FALSE
+    )
+  )
+```
+
+
+# Separate for review
+```{r }
+suspect_entities <- entities %>%
+  filter(suspicious)
+```
+
+
+# Outputs
+```{r }
+write_csv(entities, "entities_clean.csv")
+write_csv(suspect_entities, "suspect_entities.csv")
+```
+

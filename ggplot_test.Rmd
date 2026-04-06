@@ -1,0 +1,131 @@
+---
+title: "ggplot experimentation"
+output: word_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r }
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(maps)   # for basemap
+library(ggthemes)
+```
+
+# Load cleaned entities
+```{r }
+entities <- read_csv("entities_clean.csv")
+```
+
+# Same year approximation assigned 
+```{r }
+entities <- entities %>%
+  mutate(
+    year = case_when(
+      `PAGE NUMBER` >= 1 & `PAGE NUMBER` <= 50 ~ 1607,
+      `PAGE NUMBER` >= 51 & `PAGE NUMBER` <= 100 ~ 1610,
+      `PAGE NUMBER` >= 101 & `PAGE NUMBER` <= 150 ~ 1614,
+      `PAGE NUMBER` >= 151 & `PAGE NUMBER` <= 200 ~ 1617,
+      `PAGE NUMBER` >= 201 & `PAGE NUMBER` <= 250 ~ 1622,
+      TRUE ~ 1625
+    )
+  )
+```
+
+# Filter for GPE/LOC
+```{r }
+geo_entities <- entities %>%
+  filter(LABEL %in% c("GPE", "LOC")) %>%
+  distinct(`ENTITY NAME`, .keep_all = TRUE)
+```
+
+# Geocode
+```{r }
+library(tidygeocoder)
+geocoded <- geo_entities %>%
+  geocode(`ENTITY NAME`, method = "osm", lat = lat, long = lon)
+```
+
+# Join 
+```{r }
+geo_entities <- geo_entities %>%
+  left_join(geocoded %>% select(`ENTITY NAME`, lat, lon), by="ENTITY NAME") %>%
+  filter(!is.na(lat) & !is.na(lon))
+```
+
+# Base US map
+```{r }
+usa <- map_data("state")
+```
+
+# Unique years
+```{r }
+years <- sort(unique(geo_entities$year))
+```
+
+# Loop over years 
+```{r }
+for (yr in years) {
+  
+  df <- geo_entities %>% filter(year == yr)
+  
+  p <- ggplot() +
+    geom_polygon(data=usa, aes(x=long, y=lat, group=group),
+                 fill="lightgray", color="white") +
+    geom_point(data=df, aes(x=lon, y=lat, color=LABEL),
+               size=3, alpha=0.8) +
+    coord_fixed(xlim=c(-85,-70), ylim=c(35,40)) +
+    scale_color_manual(values=c("slateblue", "deeppink")) +
+    theme_minimal() +
+    labs(
+      title=paste("Virginia Company GPE/LOC Mentions in Approx. Year", yr),
+      color="NER Label"
+    )
+  
+  # save
+  ggsave(filename=paste0("map_", yr, ".png"), plot=p, width=8, height=6, dpi=300)
+  
+  print(p)
+  
+} 
+```
+
+# Making a GIF 
+```{r }
+library(magick)
+
+frames <- image_read(c(
+  "map_1607.png",
+  "map_1610.png",
+  "map_1614.png",
+  "map_1617.png",
+  "map_1622.png",
+  "map_1625.png"
+))
+
+# animate (delay in 1/100 seconds; 100 = 1 second per frame)
+animated <- image_animate(frames, fps = 1)
+
+image_write(animated, "Virginia_Company_Timeline.gif")
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+

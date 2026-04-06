@@ -1,0 +1,653 @@
+page,text,label,suspicious
+7,LONDON,GPE,True
+13,Washington,GPE,False
+15,the United States,GPE,False
+15,England,GPE,False
+15,Bacon,GPE,False
+15,Wentworth,LOC,False
+15,Buckingham,GPE,False
+15,Atlantic,LOC,False
+15,Elizabethan,LOC,False
+15,Spain,GPE,False
+15,Virginia,GPE,False
+15,Plymouth,GPE,False
+16,America,GPE,False
+16,Providence,GPE,False
+16,Boston,GPE,False
+16,Albany,GPE,False
+16,Johnston,GPE,False
+17,Rhode Island,GPE,False
+19,Richmond,GPE,False
+19,New York,GPE,False
+20,Dissipation,GPE,False
+20,MS,GPE,True
+20,Waitina,GPE,False
+21,West Indies,GPE,False
+21,Florida,GPE,False
+21,Newfoundland,GPE,False
+21,King,LOC,False
+22,Greenwich,GPE,False
+22,Kingdom,GPE,False
+22,pp,GPE,True
+23,Rymer,GPE,False
+23,Hakluyt,GPE,False
+24,Turkey,GPE,False
+24,Guinea,GPE,False
+24,East India,LOC,False
+25,Puritan,GPE,False
+28,London,GPE,False
+28,Colonies,GPE,False
+29,the North-West,LOC,True
+29,Advice,GPE,False
+30,Newport,GPE,False
+30,Percy,GPE,False
+30,Wingfield,GPE,False
+30,the south sea,LOC,False
+30,Archaeologia,GPE,False
+30,IV,GPE,True
+30,Americana,GPE,False
+30,Nova Britannia,GPE,False
+31,North Virginia,GPE,False
+31,Noa,GPE,True
+32,Cambridge,GPE,False
+34,France,GPE,False
+39,Lansdowne,GPE,False
+39,Brown,GPE,False
+40,the Somers Islands,LOC,False
+40,Sandwich,GPE,False
+41,Ipswich,GPE,False
+41,Leveson,GPE,False
+41,St.,GPE,True
+42,INTRODUOTION,GPE,True
+42,Virginea,GPE,False
+42,Noua Britannia,GPE,False
+44,Henrico,GPE,False
+44,Lawes Divine,GPE,False
+44,Martiall,LOC,False
+45,Angust,GPE,False
+45,Salisbury,GPE,False
+45,Purchas,GPE,False
+46,Kicoughtan,LOC,False
+46,Spelman,GPE,False
+47,Chaloner,GPE,False
+52,Southampton,GPE,False
+52,Towne,GPE,False
+53,Kightley,GPE,False
+53,South-,LOC,True
+54,Sonne,GPE,False
+54,the County of Anglesy,GPE,False
+55,Tuly,GPE,False
+55,Docto,GPE,False
+55,Gulston,GPE,False
+55,Iermyne,GPE,False
+57,Proviso,GPE,False
+58,Nouemb,GPE,False
+59,Termin,GPE,False
+60,Accountant,GPE,False
+60,New-England,LOC,True
+62,Huntingdon,GPE,False
+62,Baynam,GPE,False
+62,Boothby,GPE,False
+63,Highnes,GPE,False
+64,Cittizen,GPE,False
+64,Plantaton,GPE,False
+64,Ireland,GPE,False
+64,Military,LOC,False
+66,Keightley,GPE,False
+66,Gibbs,GPE,False
+66,Novemb,GPE,False
+67,Tretise,GPE,False
+68,Contrary,LOC,False
+69,Coyne,GPE,False
+70,Annales,GPE,False
+70,Kingdome,GPE,False
+71,Kwens,GPE,False
+72,consideraton,GPE,False
+72,Tenante,GPE,False
+73,Iuly,LOC,False
+73,Wight,GPE,False
+74,Shipp,GPE,False
+78,regaurd,GPE,False
+79,Captaine,GPE,False
+79,Capps,GPE,False
+79,Jand,GPE,False
+82,Enemyes,GPE,False
+85,Enimyss,GPE,False
+85,Salaxy,GPE,False
+85,Camety,GPE,False
+85,Prrvsfocos,GPE,False
+89,Oxford,GPE,False
+89,Barnard,GPE,False
+90,Walang,GPE,False
+91,the Virginia Soyle,LOC,False
+91,|lof,GPE,False
+91,Caution,GPE,False
+92,Abigaile,LOC,False
+92,Virginiabeing,GPE,False
+92,Plate,GPE,False
+99,Barbor,GPE,False
+101,Thorpe,GPE,False
+101,juwccirson,GPE,False
+102,"Companys
+London",GPE,False
+102,Parlyament,GPE,False
+102,Masse,GPE,False
+103,Demerites,GPE,False
+104,Downes,LOC,False
+104,Comittees,GPE,False
+104,Flushinge,GPE,False
+105,Italy,GPE,False
+105,Salte,LOC,False
+105,Voyadge,GPE,False
+106,Canterbury,GPE,False
+107,Webbs,GPE,False
+109,Sharea,GPE,False
+110,Nouember,GPE,False
+111,Lands,GPE,False
+112,Berbloek,GPE,False
+112,Treatice,GPE,False
+113,respect§,GPE,False
+113,Debts,GPE,False
+114,Lande,GPE,False
+115,Corne,GPE,False
+116,Lodginge,GPE,False
+117,South,LOC,False
+119,Witnesses,GPE,False
+120,Ruggelle,GPE,False
+120,Raph Fogge,GPE,False
+123,Ivne,GPE,False
+124,Cleerly,GPE,False
+124,Cattle,LOC,False
+125,Barnarde,GPE,False
+126,Dirmer,GPE,False
+126,Middlebrough,GPE,False
+126,the South Sea,LOC,False
+126,Cape Charles,GPE,False
+126,Frenchmen,GPE,False
+126,Invoice,GPE,False
+127,Zealand,GPE,False
+127,Chamberlin,GPE,False
+128,Learninge,GPE,False
+129,Cape,LOC,False
+130,Iune,LOC,False
+130,Sea,LOC,True
+131,Land,GPE,False
+131,psonn,GPE,False
+132,Brooke,GPE,False
+132,Valentia,GPE,False
+133,Voi,GPE,True
+134,Parkhurst,LOC,False
+134,Fogge,GPE,False
+134,bargaine,GPE,False
+135,Glasse,GPE,False
+136,Glassmen,GPE,False
+137,Furrs,GPE,False
+140,Highwayes,GPE,False
+140,Winston,GPE,False
+141,Tobacco,GPE,False
+143,Moorewood,GPE,False
+146,Kssington,GPE,False
+146,Amleotorn TntetGacwiiw,LOC,False
+147,Dutchwoman,GPE,False
+147,Ianuary,GPE,False
+148,Berkeley,GPE,False
+148,Amsterdam,GPE,False
+150,Pipestaues,GPE,False
+151,Supplies,GPE,False
+152,Stewarde,GPE,False
+152,Barkham,GPE,False
+153,yeare||,GPE,False
+155,Touchinge,GPE,False
+160,Cape Bona Speranza,LOC,False
+160,Copland,GPE,False
+161,Schoole,GPE,False
+162,the East Indy Schoole,LOC,False
+162,Apprentices,GPE,False
+162,Schoolem,GPE,False
+162,TT,GPE,True
+163,Aduenture,GPE,False
+164,Ouerplus,GPE,False
+165,Oatland,GPE,False
+165,Debte,GPE,False
+165,Kindred,GPE,False
+166,§as§,LOC,False
+166,Servante,GPE,False
+167,Haughton,GPE,False
+167,Companie,GPE,False
+167,Vireinia,GPE,False
+168,Io,LOC,True
+168,mocon,LOC,False
+169,hand€,GPE,False
+170,the Middle Temple,LOC,False
+170,Temple,LOC,False
+170,the Midle Temple,LOC,False
+171,Clarke,GPE,False
+171,Shipton,GPE,False
+172,"the East Indy
+Company",LOC,False
+174,Bartholmewe,GPE,False
+176,§,GPE,True
+178,Tune,GPE,False
+179,Donn,GPE,False
+180,sidera¢on,GPE,False
+182,Rochester,GPE,False
+184,Newton,GPE,False
+184,the County of Washford,GPE,False
+184,Ireland Planter,GPE,False
+184,the County of Nottingham,GPE,False
+185,Aduentur,GPE,False
+188,Wyues,LOC,False
+195,the County of Devon,GPE,False
+196,Bamfeild,GPE,False
+197,Associat@,GPE,False
+197,|lother||,GPE,False
+199,Swinhowe,GPE,False
+200,North,LOC,False
+200,the County of Norff,GPE,False
+201,Somiersett,GPE,False
+203,approbagon,GPE,False
+203,Secré,GPE,False
+205,Citty,GPE,False
+205,Rolls,LOC,False
+206,Elkington,GPE,False
+206,Warwicke,GPE,False
+208,the Virginian Schoole,GPE,False
+211,Againe,GPE,False
+211,Addi¢on,LOC,False
+214,Caninge,GPE,False
+215,Tenanteé,GPE,False
+216,Worstham,GPE,False
+218,Artist,GPE,False
+219,Jadwin,GPE,False
+219,Willis,LOC,False
+219,Copeland,GPE,False
+220,the County of Anglice,GPE,False
+222,petigon,GPE,False
+223,iustificaton,GPE,False
+223,Weldon,GPE,False
+224,Soyle,LOC,False
+224,Obieccon,GPE,False
+226,the County of,GPE,False
+226,the County of Suff,GPE,False
+234,Weston,GPE,False
+234,Kingston,GPE,False
+235,"the George
+w*",LOC,False
+235,Carriage,GPE,False
+236,notw''standinge,GPE,False
+237,Carver,GPE,False
+241,Grocer,GPE,False
+243,Record,GPE,False
+246,Plantatons,GPE,False
+246,® County,GPE,False
+248,Apparrell,GPE,False
+249,Wyne,GPE,False
+250,Vines,GPE,False
+253,Peirs,GPE,False
+255,Oxen,GPE,False
+256,Vrsula,GPE,False
+258,|lare||,GPE,False
+266,Ssieterene,GPE,False
+268,Va.,GPE,True
+268,Hening.,GPE,True
+269,Assenhlie,GPE,False
+269,Westover,GPE,False
+270,Philadelphia,GPE,False
+270,History,GPE,False
+270,esq,GPE,True
+270,Jefferson,GPE,False
+271,Design,GPE,False
+271,Pevton,GPE,False
+272,Province,GPE,False
+272,Vol,GPE,True
+275,Carolina,GPE,False
+275,Cawson,GPE,False
+275,Byrd,GPE,False
+278,dec’d,GPE,False
+278,Assemblie,GPE,False
+279,Southern Literary,LOC,False
+279,III,GPE,True
+279,Tyler,GPE,False
+280,Great Britain,GPE,False
+280,RICHMOND,GPE,True
+281,NEW YORK,GPE,False
+281,Lenox,GPE,False
+281,Shropshire,GPE,False
+281,the State of Virginia,GPE,False
+282,Southport,GPE,False
+282,Connecticut,GPE,False
+283,Chicago,GPE,False
+283,Illinois,GPE,False
+283,Shipping,GPE,False
+283,the Cape of Good Hope,LOC,False
+284,New York City,GPE,False
+284,Chalmers,LOC,False
+288,Sussex,GPE,False
+288,Manchester,GPE,False
+290,Yonge,LOC,False
+291,Wye,LOC,True
+292,Somers Islands,LOC,False
+293,Downing,LOC,False
+295,Webb,LOC,False
+297,nota,GPE,False
+300,II,GPE,True
+305,Netherlands,GPE,False
+307,Nouthampton,GPE,False
+307,manila,GPE,False
+320,INTRODUCTION,GPE,True
+329,St. Martin’s,GPE,True
+333,Bargrave,GPE,False
+334,Summer Islands,LOC,False
+334,Ibid,GPE,False
+337,Archbishop,GPE,False
+337,Portland,GPE,False
+339,Quaritch,GPE,False
+339,Knole,GPE,False
+339,Worcestershire,GPE,False
+340,Sackville,GPE,False
+340,esq.,GPE,True
+341,Tichtield,GPE,False
+345,United States,GPE,False
+346,Dover,GPE,False
+346,Maidenhead,GPE,False
+346,Leicester,GPE,False
+346,D.C.,GPE,True
+346,D. C.,GPE,True
+346,NY,GPE,True
+346,Library,GPE,False
+346,Paris,GPE,False
+346,Rome,GPE,False
+346,County,GPE,False
+346,"Wycombe, England",GPE,False
+346,Yarmouth,GPE,False
+347,Havercombe,GPE,False
+347,Ill.,GPE,True
+348,Mati*,LOC,False
+350,Esq,GPE,True
+350,Englishe,GPE,False
+351,KP,GPE,True
+351,MO,GPE,True
+351,Mag,GPE,True
+352,West,LOC,False
+352,Keiuarks,GPE,False
+354,Pocahontas,GPE,False
+354,Kiquotan,GPE,False
+354,Bermuda City,GPE,False
+355,Salishury,GPE,False
+356,Brock,GPE,False
+358,Wales,GPE,False
+359,Harwood,GPE,False
+359,Wolsenhan,GPE,False
+359,First Republic,GPE,False
+359,Jamestown,GPE,False
+360,James City,GPE,False
+360,New York Hist,GPE,False
+360,A.L,GPE,True
+361,Barkley,GPE,False
+361,Throckmorton,GPE,False
+361,Bearkley,GPE,False
+362,the B. N. w*,GPE,True
+363,Summer Island,LOC,False
+364,IJ,GPE,True
+365,Naunton,GPE,False
+366,Chauserilane,GPE,False
+367,Virgynia,GPE,False
+368,North Colony,LOC,False
+368,A.L.S.,GPE,True
+368,Huddleston,GPE,False
+370,Tracie,GPE,False
+370,Willia,GPE,False
+372,N.Y,GPE,True
+373,New England,LOC,False
+374,L.S.,GPE,True
+375,Win,GPE,True
+375,Benett,GPE,False
+375,Large,GPE,False
+375,Stith,GPE,False
+377,the Coast of America,LOC,False
+377,Edward,GPE,False
+378,States,GPE,False
+378,United Province,GPE,False
+378,A.L.S,GPE,True
+378,the Summer Islands,LOC,False
+379,AL,GPE,True
+379,Companies,GPE,False
+379,Aduen,GPE,False
+380,Charles City,GPE,False
+381,Happie,GPE,False
+383,Kikatan,GPE,False
+383,Elizabeth City,GPE,False
+385,Tower,GPE,False
+385,Jas,GPE,True
+386,Sampson,GPE,False
+386,Noy,GPE,True
+387,St. Pauls,GPE,True
+387,Garland,GPE,False
+388,Bancroft,GPE,False
+389,York,GPE,False
+389,Sainsbury,GPE,False
+391,LI,GPE,True
+392,Sumer Island,LOC,False
+392,Holograph,GPE,False
+393,Nathan,GPE,False
+394,N,GPE,True
+396,colonies,GPE,False
+397,pp.,GPE,True
+400,Warosquayak,GPE,False
+409,HU,GPE,True
+411,Somers Islands Companies,LOC,False
+412,Wariscoyack,GPE,False
+412,Councilin Virginia,GPE,False
+413,Bristo,GPE,False
+418,IT1,GPE,True
+418,Suthampton,GPE,False
+420,Sollicito,GPE,False
+425,Councilin,GPE,False
+425,XVIII,GPE,True
+427,"New Eng-
+Jand",GPE,True
+427,"East India
+School",LOC,False
+427,Beaumont,GPE,False
+428,D.S.,GPE,True
+429,New England Hist,LOC,False
+429,Lieut,GPE,False
+430,the Sommer Islands,GPE,False
+430,Moedera,GPE,False
+433,Tres,GPE,False
+439,Piiimien,GPE,False
+441,Berblock,GPE,False
+441,Wroth,GPE,False
+442,Proposiéon,GPE,False
+443,Neptune,LOC,False
+443,Appeale,GPE,False
+444,Pembrooke,GPE,False
+445,Sumerscales,GPE,False
+446,Lichfield,GPE,False
+446,Wherevpon,GPE,False
+448,Bingham,GPE,False
+449,Lottery,GPE,False
+450,Warwick,GPE,False
+451,Audite,GPE,False
+452,Landing,GPE,False
+452,Ere,LOC,True
+455,Samms,GPE,False
+457,waighty,GPE,False
+458,Kentishmen,GPE,False
+458,Ensigne,GPE,False
+464,Thowsand,GPE,False
+466,Lading,GPE,False
+470,October—1618,GPE,False
+472,Highte,GPE,False
+473,Clitherowe,GPE,False
+474,Devoéon,GPE,False
+477,Estates,GPE,False
+477,Laborinth,LOC,False
+478,Decimo,GPE,False
+479,Abbott,GPE,False
+482,Inhabitinte,GPE,False
+483,Lottary,GPE,False
+489,Loane,GPE,False
+489,Therfore,GPE,False
+491,Bohun,GPE,False
+491,Earles,GPE,False
+492,Courtes,GPE,False
+493,Publiq,GPE,False
+493,Goates,GPE,False
+493,Laid,GPE,False
+496,Sixteene Comittees,GPE,False
+496,Acton,GPE,False
+496,Springe,GPE,False
+498,Magazineheld,GPE,False
+498,Taeobh,GPE,False
+498,Marchantts,GPE,False
+498,Captivytie,GPE,False
+499,Debatinge,GPE,False
+501,Vinginia,GPE,False
+502,Printe,LOC,False
+502,Writinge,GPE,False
+504,Tilbury,GPE,False
+509,Tie B,GPE,False
+509,Beek,GPE,False
+509,Obs,GPE,True
+511,MT,GPE,True
+512,LL,GPE,True
+512,Traffique,GPE,False
+514,Argoll€,GPE,False
+515,Yorke,GPE,False
+520,Bt,GPE,True
+520,Imposte,GPE,False
+520,Prevyledge,GPE,False
+521,gratificaéon,GPE,False
+522,Consideraéon,GPE,False
+522,Recorded,GPE,False
+526,TANUARY,GPE,True
+526,Indentures,LOC,False
+529,Penéon,GPE,False
+531,Bromfeilde,GPE,False
+531,Cranmer,GPE,False
+531,Tytles,GPE,False
+532,Addiéona,GPE,False
+532,Sixt,LOC,False
+537,Coveringe,GPE,False
+538,River,LOC,False
+540,Plantaéou,GPE,False
+542,Controu9sies,GPE,False
+542,Rowles,GPE,False
+543,Crowe,GPE,False
+544,Burroughs,GPE,False
+545,M'Holloway,GPE,False
+546,Wheras,GPE,False
+546,y*Span-,GPE,True
+547,Battery,LOC,False
+547,Londen,GPE,False
+549,Christianytie,GPE,False
+549,Meddus,GPE,False
+551,Thachiiiinaansaantiton,GPE,False
+551,butt,GPE,False
+554,Husband,GPE,False
+558,Iacob,GPE,False
+558,Kinge,LOC,False
+558,Lacobbs,GPE,False
+561,Societie,GPE,False
+561,Agnes Nicholl@,LOC,False
+561,Sparrow,LOC,False
+563,Crowne,GPE,False
+563,Cape Marchant,GPE,False
+563,Chosen,GPE,False
+564,Palauicine,LOC,False
+567,Articles,LOC,False
+567,Petigon,GPE,False
+569,Imposicéon,GPE,False
+570,St,GPE,True
+572,Herberte,GPE,False
+573,Eleccon,GPE,False
+574,Le,GPE,True
+574,Midsomer,GPE,False
+579,Houghton,GPE,False
+580,Nichole,GPE,False
+581,Arundell,GPE,False
+581,Webb Husband,GPE,False
+582,Bohemia,GPE,False
+584,Societies,GPE,False
+584,Garden,GPE,False
+584,Consumed,GPE,False
+585,"w""outt",GPE,False
+585,March—1619,GPE,False
+586,Septemb,GPE,False
+586,Ironn,GPE,False
+588,Théer,GPE,False
+589,Threré,GPE,False
+589,Accompt,GPE,False
+590,Marchaunts,GPE,False
+591,Sealls,LOC,False
+592,Wye.,GPE,True
+593,Sheffeild,LOC,False
+594,Collony,GPE,False
+595,Cause,GPE,False
+595,Comissionn,GPE,False
+601,Warr,GPE,False
+601,Pirates,GPE,False
+601,Islands,GPE,False
+604,Vse,GPE,True
+606,the Cleering of Cap',LOC,False
+611,Roberteé,GPE,False
+612,Whetcombe,GPE,False
+612,Marin,GPE,False
+613,8S,GPE,True
+615,London Goldsmith,GPE,False
+615,the Cape Marchant,LOC,False
+615,Nottw''-,GPE,True
+616,Deuonsheire,GPE,False
+617,Huntington,GPE,False
+618,Heeeleoon,GPE,False
+619,Oth,GPE,True
+620,bett,GPE,False
+622,Accompts,GPE,False
+624,Solicitinge,LOC,False
+625,Haveinge,GPE,False
+626,Bagg,GPE,False
+626,Wormes,GPE,False
+627,Pitts,GPE,False
+628,Peace,LOC,False
+628,Lawes,GPE,False
+628,Thirde,GPE,False
+629,Millitary,GPE,False
+631,Husbands,GPE,False
+631,Cape Codd,LOC,False
+632,Seaven,GPE,False
+634,Audito,GPE,False
+635,Kleaven,GPE,False
+635,the North Coast,LOC,False
+636,Sprus,GPE,False
+636,Mathewe,GPE,False
+637,Drinck,GPE,False
+643,Seldon,GPE,False
+643,Swann,LOC,False
+644,Dutie,LOC,False
+646,Adwent,LOC,False
+649,vo1L,GPE,False
+650,Abigall,GPE,False
+650,the Southern Collony,LOC,False
+652,Stubbs,GPE,False
+653,Companys,GPE,False
+653,Frigott,GPE,False
+654,Poland,GPE,False
+654,Sweadland,GPE,False
+656,Instrue,GPE,False
+656,Virgini,GPE,False
+657,Flax,GPE,False
+657,Clapbord,GPE,False
+658,Children,GPE,False
+659,Hartford,GPE,False
+662,Sheppand,GPE,False
+662,Money,GPE,False
+662,Semen,LOC,False
+662,North Seas,LOC,False
+664,Ionathan,LOC,False
+665,Southamptd,GPE,False
+665,Silkworme Silk,LOC,False
+665,Fraunce,GPE,False
+666,Virginnia,GPE,False
+666,Apprentiship,GPE,False
+666,premises,LOC,False

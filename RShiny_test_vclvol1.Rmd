@@ -1,0 +1,75 @@
+---
+title: "RShiny_test"
+output: html_document
+date: "`r Sys.Date()`"
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r prepare data, echo=FALSE}
+library(tidygeocoder)
+library(dplyr)
+library(readr)
+
+# Read in the data
+locations <- read.csv("/Users/izzi/Desktop/Duke/Data+/RShiny/extracted_locations.csv")
+locations <- locations %>%
+  mutate(suspicious = tolower(suspicious) == "true")
+
+# Filter out suspicious entities
+clean_locations <- locations %>%
+  filter(!suspicious) %>%          # keep only non-suspicious rows
+  distinct(text, .keep_all = TRUE) 
+
+# Geocode
+geocoded_locations <- locations %>%
+  geocode(text, method = "osm", lat = lat, long = lon)
+
+write.csv(geocoded_locations, "geocoded_locations.csv", row.names = FALSE)
+```
+
+
+```{r inspect, echo=FALSE}
+geocoded <- read.csv("geocoded_locations.csv")
+
+summary(geocoded)
+sum(is.na(geocoded$lat))
+
+# Filter out the failed geocoded ones
+geocoded_valid <- geocoded %>%
+  filter(!is.na(lat) & !is.na(lon))
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
+
+
+```{r }
+
+```
